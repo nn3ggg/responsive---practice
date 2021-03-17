@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+  .question-box{
+  width: 1100px;
+  margin: 0 auto;
+  }
+
+
+  .q1{
+  width: 400px;
+  height: 400px;
+  background: #ff0000;
+  display: inline-block;
+  }
+
+
+  .red-box, .r_q5{
+  width: 300px;
+  height: 300px;
+  background: #ff0000;
+  }
+
+
+  .r_q2{
+  display: inline-block;
+  }
+
+
+  .r_q4, .r_q7{
+  float: left;
+  }
+
+
+  .blue-box, .b_q5{
+  width: 300px;
+  height: 300px;
+  background: #0008ff;
+  }
+
+
+  .b_q3{
+  display: inline-block;
+  margin-right: 150px;
+  }
+
+  .b_q4{
+  float: left;
+  }
+
+
+  .b_q7{
+  float: left;
+  }
+
+
+  .green-box{
+  width: 300px;
+  height: 300px;
+  background: #22ff00;
+  display: inline-block;
+  }
+
+
+  .orenge-box{
+  width: 300px;
+  height: 300px;
+  background: #ff8400;
+  }
+
+
+  .yellow-box{
+  width: 300px;
+  height: 300px;
+  background: #d4ff00;
+  }
+
+  .pink-box{
+  width: 300px;
+  height: 300px;
+  background: #ff00e1;
+  }
+
+
+  .light-green-box{
+  width: 300px;
+  height: 300px;
+  background: #00ff51;
+  }
+
+  .g_q7{
+  float: left;
+  }
+
+
+  .clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+  }
+
+  .flex-box, .order{
+  display: flex;
+  }
+
+
+
+  .align{
+  line-height: 300px;
+  text-align: center;
+  }
+
+  .center-box{
+  text-align: center;
+  }
+
+
+
+@media screen and (max-width:960px){
+  .q1{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width:960px){
+  .r_q2{
+    background: #007bff;
+  }
+}
+
+@media screen and (max-width:960px){
+  .b_q3{
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width:960px){
+  .b_q4{
+    clear: both;
+  }
+}
+
+@media screen and (max-width:960px){
+  .flex-box{
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (max-width:960px){
+  .pink-box{
+    order: 1;
+  }
+  .light-green-box{
+    order: 2;
+  }
+  .yellow-box{
+    order: 3;
+  }
+}
+
+
+@media screen and (max-width:1100px){
+  .b_q7{
+    display: none;
+  }
+
+}
+
