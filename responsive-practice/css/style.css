@@ -14,19 +14,22 @@
   }
 
 
-  .red-box, .r_q5{
+  .red-box, .r_q5, r_q7{
   width: 300px;
   height: 300px;
   background: #ff0000;
   }
 
 
-  .r_q2{
+  .red-box_r_q2{
   display: inline-block;
+  width: 300px;
+  height: 300px;
+  background: #ff0000;
   }
 
 
-  .r_q4, .r_q7{
+  .r_q4{
   float: left;
   }
 
@@ -47,9 +50,8 @@
   float: left;
   }
 
-
   .b_q7{
-  float: left;
+  display: none;
   }
 
 
@@ -72,23 +74,28 @@
   width: 300px;
   height: 300px;
   background: #d4ff00;
+  order: 2;
   }
 
   .pink-box{
   width: 300px;
   height: 300px;
   background: #ff00e1;
+  order: 3;
   }
 
 
-  .light-green-box{
+  .lightgreen_box{
   width: 300px;
   height: 300px;
   background: #00ff51;
   }
 
-  .g_q7{
-  float: left;
+  .lg_q6{
+  width: 300px;
+  height: 300px;
+  background: #00ff51;
+  order: 1;
   }
 
 
@@ -98,10 +105,19 @@
   clear: both;
   }
 
-  .flex-box, .order{
+  .order{
   display: flex;
+  justify-content: center;
   }
 
+  .flex-box{
+  display: flex;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
 
 
   .align{
@@ -111,6 +127,7 @@
 
   .center-box{
   text-align: center;
+  font-size: 0;
   }
 
 
@@ -123,16 +140,18 @@
 }
 
 @media screen and (max-width:960px){
-  .r_q2{
+  .red-box_r_q2{
     background: #007bff;
   }
 }
 
+
 @media screen and (max-width:960px){
   .b_q3{
-    margin-right: 50px;
+  margin-right: 50px;
   }
 }
+
 
 @media screen and (max-width:960px){
   .b_q4{
@@ -150,7 +169,7 @@
   .pink-box{
     order: 1;
   }
-  .light-green-box{
+  .lightgreen-box{
     order: 2;
   }
   .yellow-box{
@@ -159,10 +178,13 @@
 }
 
 
-@media screen and (max-width:1100px){
+
+@media screen and (max-width:960px){
   .b_q7{
+    display: block;
+  }
+  .r_q7{
     display: none;
   }
-
 }
 
